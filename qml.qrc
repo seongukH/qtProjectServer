@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Airport.qml</file>
+        <file>AirportForm.ui.qml</file>
+        <file>airport.png</file>
+    </qresource>
+</RCC>
