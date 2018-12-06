@@ -15,7 +15,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
     globaldata.cpp \
-    globaldata.cpp
+    globaldata.cpp \
+    Network/udpnetwork.cpp
 
 RESOURCES += qml.qrc
 
@@ -32,4 +33,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     globaldata.h \
-    globaldata.h
+    globaldata.h \
+    Network/udpnetwork.h
