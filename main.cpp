@@ -1,8 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include <QThread>
-
+#include <thread.h>
 #include <globaldata.h>
 
 #include <Network/udpnetwork.h>
@@ -12,8 +11,10 @@
 int main(int argc, char *argv[])
 {
 
-    UDPNetwork network;
-    network.readyRead();
+    Thread thread;
+    //thread.run();
+
+    thread.start();
 
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
