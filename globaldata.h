@@ -4,7 +4,22 @@
 #include <QDebug>
 #include <QtMath>
 #include <QQueue>
+#include <QMap>
 
+struct a_state{
+
+    QString a_name;
+    qreal a_x = 500.f;
+    qreal a_y = 30.f;
+    float a_r = 0;
+    int status = 1;
+};
+
+struct a_message{
+
+    QString a_name;
+    QString a_message;
+};
 
 class GlobalData
 {
@@ -13,7 +28,11 @@ public:
 
     static GlobalData *getInstance();
 
-    QQueue<QString> queue;
+    static a_message message;
+
+    QQueue<QString> messageQueue;
+    QQueue<QString> statusQueue;
+
 
 private:
     GlobalData();

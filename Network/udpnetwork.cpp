@@ -39,7 +39,13 @@ void UDPNetwork::readyRead(){
     qDebug()<<Buffer;
 
 
-    Sleep(1000);
+
+
+
+
+
+
+    Sleep(500);
 
     }
 
