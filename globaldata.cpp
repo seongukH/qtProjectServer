@@ -4,10 +4,7 @@ static GlobalData *instance;
 
 static bool instanceFlag;
 
-GlobalData::GlobalData()
-{
 
-}
 
 GlobalData *GlobalData::getInstance()
 {
@@ -22,4 +19,9 @@ GlobalData *GlobalData::getInstance()
 GlobalData::~GlobalData()
 {
     instanceFlag = false;
+}
+
+GlobalData::GlobalData()
+{
+
 }
