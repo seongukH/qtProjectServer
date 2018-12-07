@@ -4,5 +4,8 @@
         <file>Airport.qml</file>
         <file>AirportForm.ui.qml</file>
         <file>airport.png</file>
+        <file>Airplane/Airplane.qml</file>
+        <file>Airplane/AirplaneForm.ui.qml</file>
+        <file>Airplane/airplane.png</file>
     </qresource>
 </RCC>
