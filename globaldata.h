@@ -6,6 +6,8 @@
 #include <QQueue>
 #include <QMap>
 
+
+
 struct a_state{
 
     QString a_name;
@@ -28,7 +30,9 @@ public:
 
     static GlobalData *getInstance();
 
-    static a_message message;
+    a_message message;
+
+    a_state state;
 
     QQueue<QString> messageQueue;
     QQueue<QString> statusQueue;
